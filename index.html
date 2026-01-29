@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | 氏名</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div>
+            <h1 class="hero-title">Taro Yamada</h1>
+            <p class="hero-subtitle">Information Science Student / Developer</p>
+            <div class="scroll-down">Scroll Down</div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="" alt="プロフィール写真" class="profile-img">
+                <p>
+                    〇〇大学 情報学部 3年。<br>
+                    低レイヤーの技術からアプリケーション開発まで幅広く興味があります。<br>
+                    現在はコンパイラの自作を通じて言語処理系の仕組みを学習しつつ、<br>
+                    Unityを用いた3Dゲーム開発にも取り組んでいます。<br>
+                    「仕組みを理解して作る」がモットーです。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background-color: #fff;">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div>
+                        <span class="tag">C/C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Python(django)</span>
+                        <span class="tag">Processing</span>
+                        <span class="tag">VHDL</span>
+                        <span class="tag">C# (Unity)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools / Environment</h3>
+                    <div>
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">WSL / Ubuntu</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Eclipse</span>
+                        <span class="tag">Google Colab</span>
+                        <span class="tag">Unity</span>
+                        <span class="tag">Arduino</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Qualification</h3>
+                    <div>
+                        <span class="tag atcoder-green">AtCoder レート: 緑</span>
+                        <span class="tag">基本情報技術者試験(2025/3)</span>
+                        <span class="tag">TOEIC 905(2025/3)</span>
+                        <span class="tag">応用情報技術者試験(2025/10)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="container">
+            <h2>Works</h2>
+            <div class="works-grid">
+
+                <article class="work-card">
+                    <div class="work-img">Game Image</div>
+                    <div class="work-info">
+                        <h3 class="work-title">FPS Game Prototype</h3>
+                        <div class="work-tech">Unity / C#</div>
+                        <p class="work-desc">
+                            Unityで制作したFPSゲームのプロトタイプ。
+                            各種弾丸の物理挙動（反射、爆発、追尾）をスクリプトで実装し、VR対応も視野に入れた設計を行いました。
+                        </p>
+                        <a href="#" class="btn" target="_blank">GitHub</a>
+                        <a href="#" class="btn" target="_blank">Demo Video</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-img">Code Image</div>
+                    <div class="work-info">
+                        <h3 class="work-title">Mini Compiler</h3>
+                        <div class="work-tech">Java / Assembly(CASL II)</div>
+                        <p class="work-desc">
+                            簡易言語を読み込み、アセンブリコードを出力するコンパイラ。
+                            構文解析（LL法）から意味解析、コード生成までをフルスクラッチで実装しました。
+                        </p>
+                        <a href="#" class="btn" target="_blank">GitHub</a>
+                        <a href="#" class="btn" target="_blank">Qiita Article</a>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-img">App Image</div>
+                    <div class="work-info">
+                        <h3 class="work-title">Library System</h3>
+                        <div class="work-tech">SQL / Python</div>
+                        <p class="work-desc">
+                            図書管理システムのバックエンド実装。
+                            トランザクション管理を意識し、貸出・返却時の整合性を担保する設計を行いました。
+                        </p>
+                        <a href="#" class="btn" target="_blank">GitHub</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="academic" style="background-color: #fff;">
+        <div class="container">
+            <h2>Academic Focus</h2>
+            <div class="research-item">
+                <h3>コンパイラ最適化技術の研究（予定）</h3>
+                <p>
+                    現在は授業にてコンパイラの基礎理論を学習中。今後はコードの実行速度やメモリ効率を向上させるための「最適化手法」や、静的解析によるバグ検出について深く研究したいと考えています。
+                </p>
+            </div>
+            <div class="research-item">
+                <h3>情報セキュリティへの関心</h3>
+                <p>
+                    個人のプライバシー保護と監視社会のトレードオフについて、技術的・社会的観点から興味を持っています。関連書籍の読書や、セキュリティキャンプへの参加を目指して基礎知識を習得中です。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container" style="text-align: center;">
+            <h2>Contact</h2>
+            <p>ご連絡は以下よりお願いいたします。</p>
+            <br>
+            <p style="font-size: 1.2rem; font-weight: bold;">your.email@example.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Qiita/Zenn</a>
+                <a href="#" target="_blank">X(Twitter)</a>
+            </div>
+            <p>&copy; 2026 Taro Yamada</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

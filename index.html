@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | 氏名</title>
+    <title>Portfolio | 笹子正史</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"
@@ -32,8 +32,9 @@
 
     <section id="home">
         <div>
-            <h1 class="hero-title">Taro Yamada</h1>
-            <p class="hero-subtitle">Information Science Student / Developer</p>
+            <h1 class="hero-title">SASAGO MASASHI</h1>
+            <p class="hero-name-jp">笹子正史</p>
+            <p class="hero-subtitle">Computer Science Student</p>
             <div class="scroll-down">Scroll Down</div>
         </div>
     </section>
@@ -44,17 +45,13 @@
             <div class="about-content">
                 <img src="" alt="プロフィール写真" class="profile-img">
                 <p>
-                    〇〇大学 情報学部 3年。<br>
-                    低レイヤーの技術からアプリケーション開発まで幅広く興味があります。<br>
-                    現在はコンパイラの自作を通じて言語処理系の仕組みを学習しつつ、<br>
-                    Unityを用いた3Dゲーム開発にも取り組んでいます。<br>
-                    「仕組みを理解して作る」がモットーです。
+                    大阪大学大学院 情報科学研究科 情報システム工学専攻1年。<br>
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="skills" style="background-color: #fff;">
+    <section id="skills" style="background-color: #111;">
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-grid">
@@ -79,6 +76,8 @@
                         <span class="tag">Google Colab</span>
                         <span class="tag">Unity</span>
                         <span class="tag">Arduino</span>
+                        <span class="tag">ROS2</span>
+                        <span class="tag">jupyter notebook</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -100,63 +99,100 @@
             <div class="works-grid">
 
                 <article class="work-card">
-                    <div class="work-img">Game Image</div>
+                    <img src="./img/snowball.png" alt="MR雪合戦プレイ画面" class="work-img">
                     <div class="work-info">
-                        <h3 class="work-title">FPS Game Prototype</h3>
+                        <h3 class="work-title">MR雪合戦</h3>
                         <div class="work-tech">Unity / C#</div>
                         <p class="work-desc">
-                            Unityで制作したFPSゲームのプロトタイプ。
-                            各種弾丸の物理挙動（反射、爆発、追尾）をスクリプトで実装し、VR対応も視野に入れた設計を行いました。
+                            MR技術を用いた雪合戦ゲーム。<br>
+                            4人で制作した。私は雪玉の物理挙動と特殊能力を担当した。
                         </p>
-                        <a href="#" class="btn" target="_blank">GitHub</a>
-                        <a href="#" class="btn" target="_blank">Demo Video</a>
+                        <a href="#" class="btn open-video-modal" data-video-url="https://drive.google.com/file/d/1YyTPrrao-lQtP2iwOSgFicy5JEK0iU07/preview">Demo Video</a>
                     </div>
                 </article>
 
                 <article class="work-card">
-                    <div class="work-img">Code Image</div>
+                    <img src="./img/kachaka.png" alt="kachaka" class="work-img">
                     <div class="work-info">
-                        <h3 class="work-title">Mini Compiler</h3>
-                        <div class="work-tech">Java / Assembly(CASL II)</div>
+                        <h3 class="work-title">Kachaka project</h3>
+                        <div class="work-tech">ROS2 / Kachaka api / jupyter notebook</div>
                         <p class="work-desc">
-                            簡易言語を読み込み、アセンブリコードを出力するコンパイラ。
-                            構文解析（LL法）から意味解析、コード生成までをフルスクラッチで実装しました。
+                            先生のチュートリアルに従ってKachakaを使ったロボット制御の基礎を学んだ。
                         </p>
-                        <a href="#" class="btn" target="_blank">GitHub</a>
-                        <a href="#" class="btn" target="_blank">Qiita Article</a>
+                        <a href="https://mertcookimg.github.io/ros2_lecture/index.html" class="btn" target="_blank">tutorial site</a> 
+                        <a href="#" class="btn open-video-modal" data-video-url="https://drive.google.com/file/d/1JHo4RNZ2KdnU0bu1F1fwkiqpyOi1hBln/preview">obstacle avoidance Demo Video</a>
+                        <a href="#" class="btn open-video-modal" data-video-url="https://drive.google.com/file/d/1SagmWhQaoM4YUuuW9EXUFIw8D5yRxTjB/preview">visitor counter Demo Video</a>
+                        
+
+
                     </div>
                 </article>
 
                 <article class="work-card">
-                    <div class="work-img">App Image</div>
+                    <img src="./img/excel.png" alt="excelproject画面" class="work-img">
                     <div class="work-info">
-                        <h3 class="work-title">Library System</h3>
-                        <div class="work-tech">SQL / Python</div>
+                        <h3 class="work-title">exel project</h3>
+                        <div class="work-tech">Python / Django</div>
                         <p class="work-desc">
-                            図書管理システムのバックエンド実装。
-                            トランザクション管理を意識し、貸出・返却時の整合性を担保する設計を行いました。
+                            手作業で行うと面倒なExcelの特定条件による行・列の削除作業(フィルタリング)を、Web上で誰でも簡単に自動化できる実用的なWebアプリケーション
                         </p>
-                        <a href="#" class="btn" target="_blank">GitHub</a>
+                        <a href="https://github.com/sasashi334/excelproject" class="btn" target="_blank">GitHub</a>
+                        <a href="https://excelproject-6h6n.onrender.com/" class="btn" target="_blank">Web App</a>
                     </div>
                 </article>
+
+                <article class="work-card">
+                    <img src="./img/processing.png" alt="processinggames画面" class="work-img">
+                    <div class="work-info">
+                        <h3 class="work-title">Processing games</h3>
+                        <div class="work-tech">Processing</div>
+                        <p class="work-desc">
+                            Processingで3種類のミニゲームを制作した。
+                        </p>
+                        <a href="https://github.com/sasashi334/processing_games" class="btn" target="_blank">GitHub</a>
+                        <a href="https://sasashi334.github.io/processing_games/" class="btn" target="_blank">Game URL</a> 
+                        <a href="#" class="btn open-video-modal" data-video-url="https://drive.google.com/file/d/1l6r39n8aWctvaCZcKCwwo0rXsiYKjVXa/preview">単位ゲーム Demo Video</a>    
+                        <a href="#" class="btn open-video-modal" data-video-url="https://drive.google.com/file/d/1c2L3c3EDnzbm-J9nWuCeSyiXkTWgNNiH/preview">押しの子 Demo Video</a> 
+                        <a href="#" class="btn open-video-modal" data-video-url="https://drive.google.com/file/d/1nKPUBr6AGsd13hZNUMFGb0G2gyz8w6VP/preview">ぐるぐるぱんち Demo Video</a>                      
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <img src="./img/lifegame.png" alt="lifegame画面" class="work-img">
+                    <div class="work-info">
+                        <h3 class="work-title">Life game</h3>
+                        <div class="work-tech">Java</div>
+                        <p class="work-desc">
+                            Javaでライフゲームを制作した。
+                        </p>
+                        <a href="https://github.com/sasashi334/java-lifegame" class="btn" target="_blank">GitHub</a>
+                        <a href="#" class="btn open-video-modal" data-video-url="https://drive.google.com/file/d/1u4UgXWh5tYnjy-7AqbJgch4vqEkDKDJ2/preview">Demo Video</a>                        
+                    </div>
+                </article>
+                <article class="work-card">
+                    <img src="./img/arduino.png" alt="arduino" class="work-img">
+                    <div class="work-info">
+                        <h3 class="work-title">arduino</h3>
+                        <div class="work-tech">Arduino</div>
+                        <p class="work-desc">
+                            Arduinoで自動で開くゴミ箱を制作した。
+                        </p>
+                        <a href="#" class="btn open-video-modal" data-video-url="https://drive.google.com/file/d/168t1XDZ9Fb-VsJ0kDV2rGMF-y3jCr643/preview">Demo Video</a>                        
+                    </div>
+                </article>
+
 
             </div>
         </div>
     </section>
 
-    <section id="academic" style="background-color: #fff;">
+    <section id="academic" style="background-color: #111;">
         <div class="container">
             <h2>Academic Focus</h2>
             <div class="research-item">
-                <h3>コンパイラ最適化技術の研究（予定）</h3>
+                <h3>水中環境においてのロボットアーム制御の研究（予定）</h3>
                 <p>
-                    現在は授業にてコンパイラの基礎理論を学習中。今後はコードの実行速度やメモリ効率を向上させるための「最適化手法」や、静的解析によるバグ検出について深く研究したいと考えています。
-                </p>
-            </div>
-            <div class="research-item">
-                <h3>情報セキュリティへの関心</h3>
-                <p>
-                    個人のプライバシー保護と監視社会のトレードオフについて、技術的・社会的観点から興味を持っています。関連書籍の読書や、セキュリティキャンプへの参加を目指して基礎知識を習得中です。
+                    現在は基礎である制御工学を学習中。
                 </p>
             </div>
         </div>
@@ -167,20 +203,29 @@
             <h2>Contact</h2>
             <p>ご連絡は以下よりお願いいたします。</p>
             <br>
-            <p style="font-size: 1.2rem; font-weight: bold;">your.email@example.com</p>
+            <p style="font-size: 1.2rem; font-weight: bold;"><a href="mailto:masashi.sasago@gmail.com" style="color: inherit; text-decoration: underline;">masashi.sasago@gmail.com</a></p>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#" target="_blank">Qiita/Zenn</a>
-                <a href="#" target="_blank">X(Twitter)</a>
+                <a href="https://github.com/sasashi334" target="_blank">GitHub</a>
+                <a href="https://atcoder.jp/users/sasashi334" target="_blank">Atcoder</a>
             </div>
-            <p>&copy; 2026 Taro Yamada</p>
+            <p>&copy; 2026 Masashi Sasago</p>
         </div>
     </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="drive-video" src="" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
 </body>
 

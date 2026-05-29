@@ -197,17 +197,8 @@ nav {
     object-fit: cover;
     margin: 0 auto 30px;
     background-color: #333;
-    filter: grayscale(100%);
-    /* 写真をモノクロにしてシックに（お好みで外してください） */
-    transition: filter 0.3s;
     border: 2px solid #333;
 }
-
-.profile-img:hover {
-    filter: grayscale(0%);
-}
-
-/* ホバーでカラーに戻る遊び心 */
 
 /* --- Skills --- */
 .skills-grid {
